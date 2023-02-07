@@ -1,0 +1,219 @@
+@media only screen and (max-width: 476px) {
+
+    h1{
+        font-size: 1.8rem !important;
+    }
+    h2{
+        font-size: 1.2rem !important;
+    }
+    .mainContainer img{
+        width: 15vh !important;
+        padding: 5% !important;
+        
+    }
+
+
+}
+
+
+@media only screen and (max-width: 785px) {
+    #roll{
+        border-radius:42px  !important;
+        font-size:25px  !important;
+        padding:5px 12px  !important;
+        top: 75% !important;
+        left: 2% !important;
+        font-family: 'Anton', sans-serif !important;
+    
+        
+    }
+    #roll:active {
+        position:relative;
+        top:1px;
+        top: 74% !important;
+        left: 2% !important;
+    }
+    h1{
+        font-size: 2.2rem;
+    }
+    h2{
+        font-size: 1.2rem;
+    }
+  }
+
+  @media only screen and (min-width:1020px) {
+    #roll{
+        border-radius:42px  !important;
+        font-size:45px  !important;
+        padding:8px 15px  !important;
+        top: 8% !important;
+        left: 8% !important;
+        font-family: 'Anton', sans-serif !important;
+        
+    }
+    #roll:active {
+        position:relative;
+        top:1px;
+        top: 7% !important;
+        left: 8% !important;
+    }
+    h1{
+        font-size: 4.5rem !important;
+        
+    }
+    h2{
+        font-size: 3.2rem !important;
+    }
+   
+}
+
+@media only screen and (min-width:1520px) {
+    h1{
+        font-size: 8.5rem !important;
+        height: 54px;
+    }
+    h2{
+        font-size: 8.2rem !important;
+    }
+
+}
+
+
+body{
+    margin:0;
+    padding: 0;
+    background-image: url(/img/rolling-casino-dice-allan-swart.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    background-position-x: center;
+    
+   
+}
+#roll{
+        box-shadow: 8px 8px 13px 3px #8a2a21;
+        background-color:#c62d1f;
+        border-radius:42px;
+        border:1px solid #d02718;
+        display:inline-block;
+        cursor:pointer;
+        color:#E9E8E8;
+        font-family: 'Anton', sans-serif !important;
+        font-size:2rem;
+        font-weight:bold;
+        font-style:italic;
+        padding:10px 18px;
+        text-decoration:none;
+        text-shadow:2px 2px 3px #810e05;
+        position: absolute;
+        top: 25%;
+        left: 6%;
+        z-index: 10;
+    }
+    #roll:hover {
+        background-color:#cc3a2f;
+    }
+    #roll:active {
+        position:absolute;
+        top: 24%;
+        left: 6%;
+        z-index: 10;
+
+        
+    }
+
+
+
+
+.gridding{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30vh 60vh 10vh;
+    grid-template-areas: "mainTop mainTop"
+                         "mainLeft mainRight"
+                         "mainFooter mainFooter";
+
+}
+
+.top{
+    grid-area: mainTop;
+    justify-items: center;
+    align-items: center;
+}
+.top h1{
+    font-size: 4rem;
+    text-align: center;
+    font-family: 'Aboreto', cursive;
+    color: #f8f4f4;
+    height: 34px;
+}
+.top h2{
+    font-family: 'Aboreto', cursive;
+    font-size: 3rem;
+    text-align: center;
+    color: rgb(222, 9, 52);
+    padding-top: 0;
+}
+
+
+.playerTittleInvisible{
+    visibility:hidden;
+}
+#playerTittle{
+    color: #E9E8E8;
+}
+#playerTittle2{
+    color: #E9E8E8;
+}
+
+.left{
+    grid-area: mainLeft;
+    justify-items: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    margin-left: 5%;
+    padding: 3%;
+
+}
+.right{
+    grid-area: mainRight;
+    justify-items: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    margin-right: 5%;
+    padding: 3%;
+    
+}
+.mainContainer{
+    font-family: 'Aboreto', cursive;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 0;
+}
+.mainContainer img{
+    width: 30vh;
+    padding-top: 10%;
+    
+}
+.invisible{
+    display: none;
+}
+.footer{
+    grid-area: mainFooter;
+    background-color:#363434;
+    justify-items: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    opacity: 50%;
+}
+.footer p{
+    font-family: 'Gruppo', cursive;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    color: #E9E8E8;
+}
